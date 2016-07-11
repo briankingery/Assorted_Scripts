@@ -1,0 +1,8 @@
+import calendar
+
+gregorian= calendar.Calendar()
+def last_day(year, month):
+	return max(gregorian.itermonthdays(year, month))
+
+last_day(2016,2)
+#29

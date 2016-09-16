@@ -13,11 +13,9 @@ print 'Welcome to the Tweet Machine!\n\nThe purpose of this program is to break 
 method = raw_input('\n0 - Manual text entry\n1 - Text File(.txt) upload\n\nEnter 0 or 1: ')
 
 if method == str(0):
-##    tweet = raw_input('\nEnter tweet...\n').strip()
-    tweet = 'When Hillary Clinton was leading Donald Trump by 7 or 8 percentage points nationally, her Electoral College map seemed expansive. States like Virginia and Colorado were out of Trump’s reach. South Carolina and Georgia seemed competitive. Even a Clinton win in Texas seemed less like a fever dream and more like just an optimistic projection. The map seemed like Clinton’s friend.But Trump’s chances have been on an upswing the last couple of weeks and rose again Thursday on strong national and state polling. He now trails by only a couple of percentage points. And the tighter the race gets, the less favorable the map looks for Clinton. Indeed, Clinton does not have a meaningful advantage in the Electoral College, as President Obama did in 2012.'
-    tweet = tweet.strip()
+    tweet = raw_input('\nEnter tweet...\n').strip()
     length = len(tweet)
-    print length
+##    print length
     
     if length <= 140:
         print '\n',tweet
@@ -26,49 +24,49 @@ if method == str(0):
         number_of_tweets = length / 125
         number_of_tweets = number_of_tweets + 1
 
-##        # break1
-##        if tweet[125] == ' ':
-##            break1 = 125
-##        else:
-##            break1 = tweet.find(' ',125)
-##        try:
-##            # break2
-##            if tweet[250] == ' ':
-##                break2 = 250
-##            else:
-##                break2 = tweet.find(' ',250)            
-##            # break3
-##            if tweet[375] == ' ':
-##                break3 = 375
-##            else:
-##                break3 = tweet.find(' ',375)
-##            # break4            
-##            if tweet[500] == ' ':
-##                break4 = 500
-##            else:
-##                break4 = tweet.find(' ',500) 
-##            # break5            
-##            if tweet[625] == ' ':
-##                break5 = 625
-##            else:
-##                break5 = tweet.find(' ',625)
-##            # break6
-##            if tweet[750] == ' ':
-##                break6 = 750
-##            else:
-##                break6 = tweet.find(' ',750)
-##            # break7
-##            if tweet[875] == ' ':
-##                break7 = 875
-##            else:
-##                break7 = tweet.find(' ',875)
-##            # break8
-##            if tweet[1000] == ' ':
-##                break8 = 1000
-##            else:
-##                break8 = tweet.find(' ',1000)
-##        except:
-##            pass
+        # break1
+        if tweet[125] == ' ':
+            break1 = 125
+        else:
+            break1 = tweet.find(' ',125)
+        try:
+            # break2
+            if tweet[250] == ' ':
+                break2 = 250
+            else:
+                break2 = tweet.find(' ',250)            
+            # break3
+            if tweet[375] == ' ':
+                break3 = 375
+            else:
+                break3 = tweet.find(' ',375)
+            # break4            
+            if tweet[500] == ' ':
+                break4 = 500
+            else:
+                break4 = tweet.find(' ',500) 
+            # break5            
+            if tweet[625] == ' ':
+                break5 = 625
+            else:
+                break5 = tweet.find(' ',625)
+            # break6
+            if tweet[750] == ' ':
+                break6 = 750
+            else:
+                break6 = tweet.find(' ',750)
+            # break7
+            if tweet[875] == ' ':
+                break7 = 875
+            else:
+                break7 = tweet.find(' ',875)
+            # break8
+            if tweet[1000] == ' ':
+                break8 = 1000
+            else:
+                break8 = tweet.find(' ',1000)
+        except:
+            pass
 
         # print tweets with breaks
         if number_of_tweets == 2:

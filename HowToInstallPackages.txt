@@ -1,0 +1,12 @@
+Download tarbell from PyPi or another source
+Save tarbell in the following folder:
+	C:\Python27\ArcGIS10.2\Scripts\Downloaded_Packages
+Hold Shift and Right click in folder and select "Open Command Window Here"
+Type
+	easy_install NameOfTarbell
+		EXAMPLE
+			easy_install beautifulsoup4-4.4.1.tar.gz
+Package should unpack into 
+	The C:\Python27\ArcGIS10.2\Scripts location 					OR
+	might need to copy the .egg to the downloaded packages folder from
+		C:\Python27\ArcGIS10.2\Lib\site-packages
